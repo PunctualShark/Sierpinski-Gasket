@@ -1,0 +1,17 @@
+﻿<Window x:Name="window1" x:Class="Sierpinksi.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Sierpinksi"
+        mc:Ignorable="d"
+        Title="Sierpinski Gasket" Height="604" Width="516" WindowStyle="ThreeDBorderWindow" WindowStartupLocation="CenterScreen" ResizeMode="NoResize">
+    <Canvas x:Name="canvas1" ClipToBounds="True" Background="#FFCDCDCD" Margin="0,0,0,-6">
+        <Button x:Name="btnGenerate" Content="Generate" Height="32" Canvas.Top="517" Width="238" Click="BtnGenerate_Click" Canvas.Left="12" FontFamily="Segoe UI" FontSize="18"/>
+        <Image x:Name="image1" Height="461" Canvas.Left="20" Canvas.Top="14" Width="461"/>
+        <TextBlock x:Name="txtBlk" Canvas.Left="29" Canvas.Top="21" TextWrapping="Wrap" FontWeight="Bold"/>
+        <TextBox x:Name="txtbox1" Canvas.Left="257" Canvas.Top="488" TextWrapping="Wrap" Width="234"/>
+        <Button x:Name="quit" Content="Quit" Height="32" Canvas.Top="517" Width="233" Click="quit_Click" Canvas.Left="257" FontFamily="Segoe UI" FontSize="18"/>
+        <Label x:Name="lbl1" Content="Input number of steps: (40000+ recommended) " Canvas.Left="12" Canvas.Top="484" Width="240" FontWeight="Normal" HorizontalContentAlignment="Right" FontSize="11"/>
+    </Canvas>
+</Window>
